@@ -2,7 +2,7 @@ const axios = require("axios");
 var fs = require("fs");
 
 const appendRun = async () => {
-  fs.readFile("results_full.json", function (err, data) {
+  fs.readFile("outputs/results_full.json", function (err, data) {
     var json = JSON.parse(data);
     console.log(json.length / 6);
     for (let el of json) {
