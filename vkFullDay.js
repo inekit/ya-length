@@ -90,8 +90,8 @@ const appendRun = async (_, isFirst) => {
       type: "break",
     }));
 
-    route = unflat(route, 19);
-    console.log(route.length);
+    route = unflat(route, 5);
+    console.log("len", route.length);
 
     const routeLegs = [];
     const routeTrips = [];
@@ -119,7 +119,7 @@ const appendRun = async (_, isFirst) => {
       routeLegs.push(legs);
       routeTrips.push(trip);
       await new Promise((res, rej) => {
-        setTimeout(() => res(), 1000);
+        setTimeout(() => res(), 1500);
       });
     }
     //console.log(route);
